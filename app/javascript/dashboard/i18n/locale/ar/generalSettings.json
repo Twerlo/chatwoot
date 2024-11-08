@@ -48,10 +48,10 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "يمكنك تلقي رسائل البريد الإلكتروني في النطاق المخصص الخاص بك الآن."
       }
     },
-    "UPDATE_CHATWOOT": "يتوفر تحديث {latestChatwootVersion} لـ Chatwoot. الرجاء التحديث.",
+    "UPDATE_CHATWOOT": "يتوفر تحديث {latestChatwootVersion} لـ Mottasl Go. الرجاء التحديث.",
     "LEARN_MORE": "اعرف المزيد",
-    "PAYMENT_PENDING": "الدفعة الخاصة بك معلقة. الرجاء تحديث معلومات الدفع الخاصة بك للاستمرار في استخدام Chatwoot",
-    "LIMITS_UPGRADE": "لقد تجاوز حسابك حدود الاستخدام، يرجى ترقية خطتك للاستمرار في استخدام Chatwoot",
+    "PAYMENT_PENDING": "الدفعة الخاصة بك معلقة. الرجاء تحديث معلومات الدفع الخاصة بك للاستمرار في استخدام Mottasl Go",
+    "LIMITS_UPGRADE": "لقد تجاوز حسابك حدود الاستخدام، يرجى ترقية خطتك للاستمرار في استخدام Mottasl Go",
     "OPEN_BILLING": "فتح الفواتير"
   },
   "FORMS": {
@@ -75,12 +75,7 @@
     "LIST": {
       "LOADING_MESSAGE": "جاري جلب الإشعارات...",
       "404": "لا يوجد إشعارات",
-      "TABLE_HEADER": [
-        "الاسم",
-        "رقم الهاتف",
-        "المحادثات",
-        "آخر تواصل"
-      ]
+      "TABLE_HEADER": ["الاسم", "رقم الهاتف", "المحادثات", "آخر تواصل"]
     },
     "TYPE_LABEL": {
       "conversation_creation": "محادثة جديدة",
