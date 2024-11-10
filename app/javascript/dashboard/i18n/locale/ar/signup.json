@@ -3,15 +3,15 @@
     "TRY_WOOT": "تسجيل حساب",
     "TITLE": "تسجيل",
     "TESTIMONIAL_HEADER": "إن كل ما يلزم هو خطوة واحدة للمضي قدما",
-    "TESTIMONIAL_CONTENT": "You're one step away from engaging your customers, retaining them and finding new ones.",
-    "TERMS_ACCEPT": "من خلال التسجيل، فإنك توافق على <a href=\"https://www.chatwoot.com/terms\">شروط الخدمة</a> و <a href=\"https://www.chatwoot.com/privacy-policy\">سياسة الخصوصية</a>",
+    "TESTIMONIAL_CONTENT": "أنت على بعد خطوة واحدة من جذب عملائك والاحتفاظ بهم والعثور على عملاء جدد.",
+    "TERMS_ACCEPT": "من خلال التسجيل، فإنك توافق على <a href=\"https://www.mottaslgo.com/terms\">شروط الخدمة</a> و <a href=\"https://www.mottaslgo.com/privacy-policy\">سياسة الخصوصية</a>",
     "OAUTH": {
       "GOOGLE_SIGNUP": "Sign up with Google"
     },
     "COMPANY_NAME": {
-      "LABEL": "Company name",
-      "PLACEHOLDER": "Enter your company name. eg: Wayne Enterprises",
-      "ERROR": "Company name is too short"
+      "LABEL": "اسم الشركة",
+      "PLACEHOLDER": "أدخل اسم شركتك. على سبيل المثال: مؤسسات واين",
+      "ERROR": "اسم الشركة قصير جدًا"
     },
     "FULL_NAME": {
       "LABEL": "الاسم الكامل",
@@ -21,7 +21,7 @@
     "EMAIL": {
       "LABEL": "البريد الإلكتروني للعمل",
       "PLACEHOLDER": "أدخل عنوان بريدك الإلكتروني للعمل. مثال: bruce{'@'}wayne{'.'}enterprises",
-      "ERROR": "Please enter a valid work email address"
+      "ERROR": "الرجاء إدخال عنوان بريد إلكتروني صالح للعمل"
     },
     "PASSWORD": {
       "LABEL": "كلمة المرور",
