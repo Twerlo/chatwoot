@@ -2,12 +2,14 @@ version: '3'
 
 services:
   base: &base
-    image: chatwoot/chatwoot:latest
+    image: twerlo/zafy:latest
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
     env_file: .env ## Change this file for customized env variables
     volumes:
-      - /data/storage:/app/storage
+      - app_data:/app/storage
 
-  rails:
+  app:
     <<: *base
     depends_on:
       - postgres
@@ -40,9 +42,9 @@ services:
     ports:
       - '127.0.0.1:5432:5432'
     volumes:
-      - /data/postgres:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=chatwoot
+      - POSTGRES_DB=zafy_db
       - POSTGRES_USER=postgres
       # Please provide your own password.
       - POSTGRES_PASSWORD=
@@ -53,6 +55,43 @@ services:
     command: ["sh", "-c", "redis-server --requirepass \"$REDIS_PASSWORD\""]
     env_file: .env
     volumes:
-      - /data/redis:/data
+      - redis_data:/data
     ports:
       - '127.0.0.1:6379:6379'
+
+  caddy:
+    image: caddy/caddy
+    container_name: caddy
+    depends_on:
+    - "hasura_gql"
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - APP_DOMAIN_NAME=${APP_DOMAIN_NAME}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_certs:/root/.caddy
+
+  watchtower:
+    image: containrrr/watchtower
+    command:
+      - "--cleanup"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=false"
+    env_file:
+      - .env
+    environment:
+      - REPO_USER=${DOCKERHUB_USER}
+      - REPO_PASS=${DOCKERHUB_PASS}
+      - WATCHTOWER_POLL_INTERVAL=60
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: "watchtower"
+
+volumes:
+  caddy_certs:
+  app_data:
+  db_data:
+  redis_data:
