@@ -1,9 +1,9 @@
 {
-  "name": "Mottasl Go",
-  "description": "Mottasl Go is a customer support tool for instant messaging channels",
-  "website": "https://www.mottaslgo.com/",
+  "name": "Zafy",
+  "description": "Zafy is a customer support tool for instant messaging channels",
+  "website": "https://app.zafy.io/",
   "repository": "https://github.com/Twerlo/chatwoot",
-  "logo": "https://app.mottaslgo.com/brand-assets/logo_thumbnail.svg",
+  "logo": "https://app.zafy.io/brand-assets/logo_thumbnail.svg",
   "keywords": ["live chat", "customer support", "ruby", "rails", "vue"],
   "success_url": "/",
   "env": {
