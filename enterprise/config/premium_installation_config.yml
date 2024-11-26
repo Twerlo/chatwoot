@@ -1,6 +1,6 @@
 # ------- Branding Related Config ------- #
 - name: INSTALLATION_NAME
-  value: 'Mottasl Go Support'
+  value: 'Zafy Support'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
@@ -8,15 +8,15 @@
 - name: LOGO_DARK
   value: '/brand-assets/logo_dark.svg'
 - name: BRAND_URL
-  value: 'https://www.mottaslgo.com'
+  value: 'https://app.zafy.io'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.mottaslgo.com'
+  value: 'https://app.zafy.io'
 - name: BRAND_NAME
-  value: 'Mottasl Go'
+  value: 'Zafy'
 - name: TERMS_URL
-  value: 'https://www.mottaslgo.com/terms-of-service'
+  value: 'https://app.zafy.io/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://www.mottaslgo.com/privacy-policy'
+  value: 'https://app.zafy.io/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 # ------- End of Branding Related Config ------- #
